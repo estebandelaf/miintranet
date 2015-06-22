@@ -1,0 +1,39 @@
+#info {
+        margin-top: 80px;
+	width: 215px;
+	float: right;
+}
+
+#info #user img {
+	border: 1px solid black;
+}
+
+#info h1 {
+	font-size: 1em;
+	text-align: center;
+	font-weight: bold;
+}
+
+#info h2 {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+#info a {
+	font-size: 0.75em;
+}
+
+
+#info #news p {
+	font-size: 0.8em;
+}
+
+#info #news .infoOfNews {
+	font-size: 0.75em;
+	text-align: right;
+}
+
+#info #birthday li {
+	list-style-type: none;
+	font-size: 0.8em;
+}

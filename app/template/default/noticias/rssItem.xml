@@ -1,0 +1,8 @@
+                <item>
+                        <title>{title}</title>
+                        <author>{author}</author>
+                        <description>{intro}</description>
+                        <pubDate>{pubDate}</pubDate>
+                        <link>{link}</link>
+                        <guid isPermaLink="true">{link}</guid>
+                </item>

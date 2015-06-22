@@ -1,0 +1,10 @@
+	<table>
+		<thead>
+			<tr>
+{ths}
+			</tr>
+		</thead> 
+		<tbody> 
+{trs}
+		</tbody>
+	</table>

@@ -1,0 +1,14 @@
+.noticia fieldset {
+	margin-bottom: 2em;
+}
+
+.noticia legend {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.noticia .by {
+	text-align: right;
+	font-size: 0.8em;
+	font-style: italic;
+}

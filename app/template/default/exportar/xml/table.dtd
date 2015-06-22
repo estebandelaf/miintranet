@@ -1,0 +1,8 @@
+<!ELEMENT root (table)>
+<!ELEMENT table (thead,tbody)>
+<!ELEMENT thead (tr)>
+<!ELEMENT tbody (tr)>
+<!ELEMENT tr (th,td)>
+
+<!ELEMENT th (#PCDATA)>
+<!ELEMENT td (#PCDATA)>

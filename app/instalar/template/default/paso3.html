@@ -1,0 +1,79 @@
+<h2>Configuración del sistema</h2>
+
+<div id="formulario">
+	<form action="index.php" method="post" onsubmit="return validarFormulario(this)">
+
+		<h3>Usuario inicial (root)</h3>
+		<p>Para el ID del usuario se recomienda utilizar el RUN sin puntos ni dígito verificador.</p>
+		<div><div class="label">ID</div><div class="field"><input type="text" name="usuario_id" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Nombre</div><div class="field"><input type="text" name="usuario_nombre" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Apellido</div><div class="field"><input type="text" name="usuario_apellido" value="" class="fieldRequired" /></div></div>
+
+		<div><div class="label">Fecha nacimiento</div>
+                <div class="field"><input type="text" name="usuario_fechanacimiento" value="" id="usuario_fechanacimientoField" readonly="readonly" class="fieldRequired" /> <img src="template/default/img/calendario.gif" id="usuario_fechanacimientoFieldTrigger" /></div></div>
+                <script type="text/javascript">
+                        Calendar.setup({
+                        inputField     :    "usuario_fechanacimientoField",
+                        ifFormat       :    "%Y-%m-%d",
+                        button         :    "usuario_fechanacimientoFieldTrigger"
+                        });
+                </script>
+		
+		<div><div class="label">Fecha ingreso</div>
+                <div class="field"><input type="text" name="usuario_ingreso" value="" id="usuario_ingresoField" readonly="readonly" class="fieldRequired" /> <img src="template/default/img/calendario.gif" id="usuario_ingresoFieldTrigger" /></div></div>
+                <script type="text/javascript">
+                        Calendar.setup({
+                        inputField     :    "usuario_ingresoField",
+                        ifFormat       :    "%Y-%m-%d",
+                        button         :    "usuario_ingresoFieldTrigger"
+                        });
+                </script>
+		
+		<div><div class="label">Área</div><div class="field"><input type="text" name="area_glosa" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Cargo</div><div class="field"><input type="text" name="cargo_glosa" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Email</div><div class="field"><input type="text" name="usuario_email" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Lenguaje</div><div class="field"><select name="usuario_lang">
+				<option value="es">es</option>
+				<option value="en">en</option>
+		</select></div></div>
+		<div><div class="label">Usuario</div><div class="field"><input type="text" name="usuario_usuario" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Clave</div><div class="field"><input type="password" name="usuario_clave" value="" class="fieldRequired" /></div></div>
+
+		<h3>Empresa</h3>
+		<p>Rut de la empresa incluye puntos y dígito verificador.</p>
+		<div><div class="label">Rut</div><div class="field"><input type="text" name="empresa_rut" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Razón social</div><div class="field"><input type="text" name="empresa_razon_social" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Nombre fantasía</div><div class="field"><input type="text" name="empresa_nombre_fantasia" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Act. económica</div><div class="field"><select name="empresa_acteco" class="fieldRequired">
+{actecos}
+		</select></div></div>
+		<div><div class="label">R. legal</div><div class="field"><input type="text" name="empresa_rlegal" value="" class="fieldRequired" /></div></div>
+		
+		<h3>Casa matriz / Oficina principal</h3>
+		<div><div class="label">ID</div><div class="field"><input type="text" name="sucursal_id" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Glosa</div><div class="field"><input type="text" name="sucursal_glosa" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Dirección</div><div class="field"><input type="text" name="sucursal_direccion" value="" class="fieldRequired" /></div>
+		<div><div class="label">Comuna</div><div class="field"><select name="sucursal_comuna_id" class="fieldRequired">
+{comunas}
+		</select></div></div>
+		<div><div class="label">Email</div><div class="field"><input type="text" name="sucursal_email" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Teléfono</div><div class="field"><input type="text" name="sucursal_telefono" value="" class="fieldRequired" /></div></div>
+
+		<h3>Otros parámetros</h3>
+		<div><div class="label">Título</div><div class="field"><input type="text" name="site_title" value="Intranet" class="fieldRequired" /></div></div>
+		<div><div class="label">Tmp</div><div class="field"><input type="text" name="tmp" value="/tmp" class="fieldRequired" /></div></div>
+		<div><div class="label">Zona horaria</div><div class="field"><input type="text" name="zona_horaria" value="America/Santiago" class="fieldRequired" /></div></div>
+		
+		<!-- configuracion de la base de datos -->
+		<input type="hidden" name="db_type" value="{db_type}" />
+		<input type="hidden" name="db_host" value="{db_host}" />
+		<input type="hidden" name="db_port" value="{db_port}" />
+		<input type="hidden" name="db_user" value="{db_user}" />
+		<input type="hidden" name="db_pass" value="{db_pass}" />
+		<input type="hidden" name="db_name" value="{db_name}" />
+		<input type="hidden" name="db_char" value="{db_char}" />
+		
+		<div class="label"></div><div class="field"><input type="submit" name="paso4" value="Siguiente &gt;&gt;" /></div>
+
+	</form>
+</div>

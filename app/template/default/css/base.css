@@ -1,0 +1,100 @@
+body {
+	font-size: 0.9em;
+	background: url('/template/default/img/background.jpg') repeat-x;
+	background-color: #464646;
+
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.fright {
+	float: right;
+	margin-left: 0.5em;
+}
+
+.fleft {
+	float: left;
+	margin-right: 0.5em;
+}
+
+.f50 {
+	float: left;
+	width: 50%;
+}
+
+.clear {
+	clear: both;
+}
+
+p, li {
+	text-align: justify;
+}
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+}
+
+#top, #footer {
+	border: 2px solid black;
+	background: white;
+}
+
+#top {
+	height: 100px;
+}
+
+#top .logos_by {
+	float: left;
+	width: 142px;
+	margin-left: 20px;
+	margin-top: 17px;
+	text-align: center;
+}
+
+#top .titulo_pagina {
+	float: left;
+	width: 500px;
+	margin-left: 60px;
+	margin-top: 27px;
+	text-align: center;
+	font-size: 37px;
+}
+
+#top .logo_empresa {
+	float: right;
+}
+
+#content {
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+	border: 2px solid black;
+	background: white;
+}
+
+#footer {
+        margin-top: -10px;
+	font-size: 0.75em;
+	text-align: center;
+	padding: 0.5em 0;
+}

@@ -1,0 +1,32 @@
+html, body {
+	height: 98%;
+}
+.map {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+}
+
+.smallmap {
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+}
+
+#ubicacion {
+	margin-top: 0.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.glosa {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.ubicacion {
+}
+
+.coordenadas {
+	font-size: 0.8em;
+}

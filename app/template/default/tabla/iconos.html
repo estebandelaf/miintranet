@@ -1,0 +1,15 @@
+<div class="tablaAcciones">
+	<div class="new">{new}</div>
+	<div class="paginator" id="paginator">
+{paginator}
+	</div>
+	<div class="icons">
+                <a href="/exportar/xls" title="{xls}"><img src="/template/default/tabla/img/excel.gif" alt="" /></a>
+                <a href="/exportar/ods" title="{ods}"><img src="/template/default/tabla/img/ods.png" alt="" /></a>
+                <a href="/exportar/csv" title="{csv}"><img src="/template/default/tabla/img/txt.gif" alt="" /></a>
+                <a href="/exportar/pdf" title="{pdf}"><img src="/template/default/tabla/img/pdf.png" alt="" /></a>
+		<a href="/exportar/xml" title="{xml}"><img src="/template/default/tabla/img/xml.png" alt="" /></a>
+                <a onclick="$('#{id}').show(); $('#tablaShow{id}').hide(); $('#tablaHide{id}').show();" id="tablaShow{id}" title="{show}"><img src="/template/default/tabla/img/mas.gif" alt="" /></a>
+		<a onclick="$('#{id}').hide(); $('#tablaHide{id}').hide(); $('#tablaShow{id}').show();" id="tablaHide{id}" title="{hide}"><img src="/template/default/tabla/img/menos.gif" alt="" /></a>
+        </div>
+</div>

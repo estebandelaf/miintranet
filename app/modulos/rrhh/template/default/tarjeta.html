@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang}" lang="{lang}">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Tarjeta {id}</title>
+		<link rel="stylesheet" href="/modulos/rrhh/template/default/css/tarjeta.css" type="text/css" media="screen,print" />
+	</head>
+	<body>
+		<div id="tarjeta">
+			<div id="adelante">
+				<div class="txt">
+					<h1>{fantasia}</h1>
+					<img src="/rrhh/avatar?id={id}" alt="avatar" />
+					<div class="label">Nombre</div><div class="value">{nombre} {apellido}</div>
+					<div class="label">Run</div><div class="value">{run}</div>
+					<div class="label">Cargo</div><div class="value">{cargo}</div>
+					<div class="label">Sucursal</div><div class="value">{sucursal}</div>
+				</div>
+			</div>
+			<div id="atras">
+				<div class="txt">
+					<img src="/exportar/barcode?txt={id}" alt="barcode" />
+					<div class="aviso">Esta credencial es personal e intransferible</div>
+					<div class="footer">
+						<div class="empresa">{empresa}</div>
+						<div class="direccion">{direccion}, {comuna}</div>
+						<div class="contacto"">{email} - {telefono}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>

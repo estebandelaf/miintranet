@@ -1,0 +1,68 @@
+# activar rewrite :-)
+RewriteEngine on
+
+# evitar conexion http, siempre https
+#RewriteCond %{SERVER_PORT} 80
+#RewriteCond %{REQUEST_URI} /
+#RewriteRule ^(.*)$ https://intranet.dev/$1 [R,L]
+
+# redireccion a los diferentes modulos del sitio
+
+# no modificar los modulos que estan abajo
+
+Rewriterule ^productos/(.+)/(.+)/(.+)$ modulos/productos/modulos/$1/modulos/$2/$3.php
+Rewriterule ^productos/(.+)/(.+)/$ modulos/productos/modulos/$1/modulos/$2/menu.php
+Rewriterule ^productos/(.+)/(.+)$ modulos/productos/modulos/$1/$2.php
+Rewriterule ^productos/(.+)/$ modulos/productos/modulos/$1/menu.php
+Rewriterule ^productos/(.+)$ modulos/productos/$1.php
+Rewriterule ^productos/$ modulos/productos/menu.php
+
+Rewriterule ^rrhh/(.+)/(.+)$ modulos/rrhh/modulos/$1/$2.php
+Rewriterule ^rrhh/(.+)/$ modulos/rrhh/modulos/$1/menu.php
+Rewriterule ^rrhh/(.+)$ modulos/rrhh/$1.php
+Rewriterule ^rrhh/$ modulos/rrhh/menu.php
+
+Rewriterule ^servicios/(.+)/(.+)$ modulos/servicios/modulos/$1/$2.php
+Rewriterule ^servicios/(.+)/$ modulos/servicios/modulos/$1/menu.php
+Rewriterule ^servicios/(.+)$ modulos/servicios/$1.php
+Rewriterule ^servicios/$ modulos/servicios/menu.php
+
+Rewriterule ^perfil/(.+)/(.+)$ modulos/perfil/modulos/$1/$2.php
+Rewriterule ^perfil/(.+)/$ modulos/perfil/modulos/$1/menu.php
+Rewriterule ^perfil/(.+)$ modulos/perfil/$1.php
+Rewriterule ^perfil/$ modulos/perfil/menu.php
+
+Rewriterule ^admin/(.+)/(.+)$ modulos/admin/modulos/$1/$2.php
+Rewriterule ^admin/(.+)/$ modulos/admin/modulos/$1/menu.php
+Rewriterule ^admin/(.+)$ modulos/admin/$1.php
+Rewriterule ^admin/$ modulos/admin/menu.php
+
+Rewriterule ^exportar/(.+) modulos/exportar/$1.php
+
+Rewriterule ^mapa/(.+) modulos/mapa/$1.php
+Rewriterule ^mapa/$ modulos/mapa/menu.php
+
+# fin redireccion a los diferentes modulos del sitio
+
+# redireccionar a diferentes paginas que no son parte de modulos
+Rewriterule ^login$ login.php
+Rewriterule ^logout$ logout.php
+Rewriterule ^clave$ clave.php
+Rewriterule ^error$ error.php
+Rewriterule ^noticias$ noticias.php
+Rewriterule ^rss$ rss.php
+
+# redireccionar errores a una web en php para una visualizacion mas agradable
+ErrorDocument 400 /error?errno=400
+ErrorDocument 401 /error?errno=401
+ErrorDocument 403 /error?errno=403
+ErrorDocument 404 /error?errno=404
+ErrorDocument 500 /error?errno=500
+
+# evitar que se muestre el directorio si no existe un index.*
+Options -Indexes
+
+# denegar acceso a ciertos archivos
+<Files ~ "(inc.php|class.php|.htaccess|.phps)$">
+	Deny from all
+</Files>

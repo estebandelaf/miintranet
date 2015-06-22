@@ -1,0 +1,8 @@
+		<input type="text" name="{name}" value="{value}" id="{name}Field" {readonly} {atrib} class="fieldTableDate" /> <img src="/template/default/form/img/calendario.gif" id="{name}FieldTrigger" />
+                <script type="text/javascript">
+                        Calendar.setup({
+                        inputField     :    "{name}Field",
+                        ifFormat       :    "%Y-%m-%d",
+                        button         :    "{name}FieldTrigger"
+                        });
+                </script>

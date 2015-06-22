@@ -1,0 +1,21 @@
+.textbox {
+	float: right;
+	width: 300px;
+	border: 1px solid #4c86c1;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.textbox .titulo {
+	background: #4c86c1 url("/template/default/textbox/img/textbox.gif") no-repeat;
+	font-weight: bold;
+	padding: 3px 0 3px 23px;
+	color: white;
+	font-size: 0.75em;
+}
+
+.textbox .contenido {
+	text-align: justify;
+	padding: 3px;
+	font-size: 0.9em;
+}

@@ -1,0 +1,33 @@
+<h2>Configuración de la base de datos</h2>
+
+<div id="formulario">
+	<form action="index.php" method="post" onsubmit="return validarFormulario(this)">
+	
+		<h3>Base de datos</h3>
+		<p>Soporte para otras bases de datos será incluido en próximas actualizaciones.</p>
+		<div><div class="label">Tipo</div><div class="field"><select name="db_type" onchange="database(this.value)">
+			<option value="postgresql">PostgreSQL</option>
+			<!--<option value="mysql">MySQL</option>-->
+		</select></div></div>
+		<div><div class="label">Servidor</div><div class="field"><input type="text" name="db_host" value="localhost" class="fieldRequired" /></div></div>
+		<div><div class="label">Puerto</div><div class="field"><input type="text" name="db_port" value="5432" class="fieldRequired" /></div></div>
+		<div><div class="label">Usuario</div><div class="field"><input type="text" name="db_user" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Clave</div><div class="field"><input type="password" name="db_pass" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Base de datos</div><div class="field"><input type="text" name="db_name" value="" class="fieldRequired" /></div></div>
+		<div><div class="label">Charset</div><div class="field"><input type="text" name="db_char" value="utf8" class="fieldRequired" /></div></div>
+	
+		<h3>Datos predeterminados</h3>
+		<input type="hidden" name="pais" value="chile" />
+		<p>Datos que se cargarán en las tablas:</p>
+		<ul>
+			<li>Regiones</li>
+			<li>Comunas</li>
+			<li>AFP</li>
+			<li>Salud (FONASA e Isapres)</li>
+		</ul>
+		<p>Actualmente solo se soporta la carga de datos para Chile.</p>
+	
+		<div class="label"></div><div class="field"><input type="submit" name="paso3" value="Siguiente &gt;&gt;" /></div>
+
+	</form>
+</div>

@@ -1,0 +1,39 @@
+#tabmenu {
+	margin-top: -0.7em;
+	padding: 5px 0px 5px 0px;
+	text-align: center;
+	font-size: 0.75em;
+	float: right;
+}
+
+#tabmenu a {
+	padding: 5px 10px 3px 10px;
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	text-decoration: none;
+	background: #eee;
+}
+
+#tabmenu a:hover {
+	border-top: 2px solid #fff;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+	background: white;
+}
+
+#tabmenu a.on {
+	border-top: 2px solid #fff;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	font-weight: bold;
+	background: white;
+}
+
+.tabs {
+	visibility: hidden;
+	display: none;
+}

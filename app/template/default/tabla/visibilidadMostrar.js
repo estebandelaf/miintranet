@@ -1,0 +1,1 @@
+                $('#tablaShow{id}').hide();

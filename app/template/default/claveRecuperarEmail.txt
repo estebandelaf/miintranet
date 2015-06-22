@@ -1,0 +1,14 @@
+{nombre},
+
+Se ha solicitado recuperar la contraseña de su cuenta:
+
+Usuario: {usuario}
+Aplicación: {server}
+
+Su cuenta ha sido bloqueada y debe ir al siguiente enlace para activarla:
+
+http://{server}/clave?recuperar&id={id}&key={key}
+
+atte,
+{server}
+{date}

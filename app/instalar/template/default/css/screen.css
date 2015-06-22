@@ -1,0 +1,95 @@
+body {
+	background: #8dbdd8;
+	font-size: 1em;
+}
+
+#page {
+	width: 700px;
+	margin: 0 auto;
+}
+
+#content {
+	border: 2px solid black;
+	background: white;
+}
+
+#content h1 {
+	font-size: 2em;
+	padding: 10px 20px;
+	border-bottom: 2px dotted black;
+}
+
+#content h2 {
+	font-size: 1.5em;
+	padding: 10px 20px;
+}
+
+#content h3 {
+	font-size: 1.25em;
+	padding: 10px 20px;
+}
+
+#content p {
+	padding: 0 20px;
+	text-align: justify;
+}
+
+#content #formulario {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#content #formulario .field input, .field textarea, .field select {
+	border: 1px solid black;
+	padding: 3px;
+	width: 250px;
+}
+
+#content #formulario .field select {
+	width: 257px;
+}
+
+#content #formulario .label {
+	float: left;
+	width: 130px;
+	text-align: right;
+	font-weight: bold;
+}
+
+#content #formulario .field {
+	margin-bottom: 5px;
+	text-align: left;
+	margin-left: 140px;
+}
+
+#content #formulario .helpbox {
+	font-size: 0.9em;
+	width: 300px;
+	margin-top: -10px;
+	margin-left: 210px;
+	border: 2px solid black;
+	background-color: #eee;
+	color: black;
+	padding: 0.5em;
+	visibility: hidden;
+	float: right;
+	position: absolute;
+	text-align: justify;
+}
+
+#content #formulario .asterisco {
+	color: red;
+	margin-right: 1em;
+}
+
+#content table {
+	width: 500px;
+	border: 1px dotted gray;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#content table th, #content table td {
+	text-align: center;
+}

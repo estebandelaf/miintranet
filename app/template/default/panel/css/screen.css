@@ -1,0 +1,57 @@
+#panel {
+	width: 976px;
+	padding: 0px;
+	padding-top: 3px;
+	position: fixed;
+	bottom: 0px;
+	background: white;
+	border: 2px solid black;
+	border-bottom: 0px;
+	color: black;
+	font-size: 1em;
+}
+
+#panel #menu {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 0.5em;
+}
+
+#panel #menu li a {
+	display: block;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#panel #menu li a:hover {
+	color: red;
+}
+
+#panel #menu li {
+	list-style: none;
+	float: left;
+	margin-right: 1em;
+	position: relative;
+}
+
+#panel #menu ul {
+	display: none;
+	list-style: none;
+	position: absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+	left: 0px; /* Para que no monte sobre el <li> */
+	bottom: 1em;
+	padding: 0;
+	background: white;
+	border: 2px solid black;
+	padding-left: 0.5em;
+}
+#panel #menu ul li {
+	width: 230px;
+}
+
+#panel #menu li:hover > ul {
+	display: block;
+}

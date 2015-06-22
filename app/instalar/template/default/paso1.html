@@ -1,0 +1,34 @@
+<h2>Verificando requisitos para la instalación</h2>
+<p>Una vez todos los campos hayan sido verificados puede continuar con la instalación.</p>
+<p>Si tiene dudas con algún requerimiento por favor realice una búsqueda sobre como tener operativo cada elemento.</p>
+	
+<table>
+<tr><th>Icono</th><th>Descripción</th></tr>
+<tr><td>{ok}</td><td>Item existe</td></tr>
+<tr><td>{nok}</td><td>Item no existe y es necesario</td></tr>
+<tr><td>{warning}</td><td>Iten no existe, pero es recomendado</td></tr>
+</table>
+
+<table>
+<tr><th>Item</th><th>Estado</th></tr>
+<tr><td>Apache: módulo rewrite</td><td>{mod_rewrite}</td></tr>
+<tr><td>Apache: módulo ssl</td><td>{mod_ssl}</td></tr>
+<tr><td>PHP: versión 5</td><td>{php}</td></tr>
+<tr><td>PHP: display_errors = Off</td><td>{display_errors}</td></tr>
+<tr><td>PHP: file_uploads = On</td><td>{file_uploads}</td></tr>
+<tr><td>PHP: safe_mode = On</td><td>{safe_mode}</td></tr>
+<tr><td>PHP: GD</td><td>{php_gd}</td></tr>
+<tr><td>PHP: /usr/share/php/Image/Barcode.php</td><td>{pear_image_barcode}</td></tr>
+<tr><td>PHP: /usr/share/php/Spreadsheet/Excel/Writer.php</td><td>{pear_spreadsheet_excel_writer}</td></tr>
+<tr><td>PHP: /usr/share/php/Mail.php</td><td>{pear_mail}</td></tr>
+<tr><td>PHP: /usr/share/php/Mail/mime.php</td><td>{pear_mail_mime}</td></tr>
+<tr><td>PHP: PostgreSQL</td><td>{db_postgresql}</td></tr>
+<tr><td>PHP: MySQL</td><td>{db_mysql}</td></tr>
+<tr><td>Soporte para alguna base de datos</td><td>{db_any}</td></tr>
+</table>
+
+<div id="formulario">
+	<form action="index.php" method="post">
+		<div class="label"></div><div class="field"><input type="submit" name="paso2" value="Siguiente &gt;&gt;" />
+	</form>
+</div>

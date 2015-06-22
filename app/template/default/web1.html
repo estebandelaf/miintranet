@@ -1,0 +1,48 @@
+<!-- Aplicación desarrollada por Esteban De La Fuente Rubio - http://mi.delaf.cl/proyectos/miintranet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang}" lang="{lang}">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>{title} - {url}</title>
+		<link href="/rss" rel="alternate" type="application/rss+xml" title="{title} / RSS" />
+                <link rel="shortcut icon" href="/template/default/img/favicon.png" />
+		<!-- js -->
+		<script type="text/javascript" src="/js/lang/{lang}.js"></script>
+		<script type="text/javascript" src="/js/js.js"></script>
+		<script type="text/javascript" src="/js/jquery.js"></script>
+		<script type="text/javascript" src="/js/jquery.tablesorter.js"></script>
+		<script type="text/javascript" src="/js/tiny_mce/jquery.tinymce.js"></script>
+{jsMod}
+		<script type="text/javascript">
+			if (navigator.appName == "Microsoft Internet Explorer")
+				window.location.href="/ie.html";
+		</script>
+		<!-- /js -->
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="/template/default/css/screen.css" media="screen" title="screen" />
+		<link rel="stylesheet" type="text/css" href="/template/default/css/print.css" media="print" title="print" />
+{cssMod}
+		<!-- /css -->
+		<!-- calendar -->
+		<script type="text/javascript" src="/js/calendar/calendar.js"></script>
+		<script type="text/javascript" src="/js/calendar/calendar-{calendar_lang}.js"></script>
+		<script type="text/javascript" src="/js/calendar/calendar-setup.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="/js/calendar/calendar.css" />
+		<!-- /calendar -->
+	</head>
+	<body>
+		<div id="page">
+			<div id="top">
+				<div class="logos_by">
+					<a href="http://sasco.cl" title="SASCO: Servicios, Asesorías y Soluciones Computacionales">
+						<img src="/template/default/img/logo_sasco.png" alt="sasco" />
+					</a>
+					<a href="http://mi.delaf.cl/proyectos/miintranet/" title="Proyecto MiInTrAnEt @ mi.delaf.cl">
+						<img src="/template/default/img/logo_miintranet.png" alt="miintranet" />
+					</a>
+				</div>
+				<div class="titulo_pagina">{title}</div>
+				<div class="logo_empresa"><img src="/img/logo_empresa.jpg" alt="" /></div>
+			</div>
+{nav}
+			<div id="content">

@@ -1,0 +1,53 @@
+#colores {
+	text-align: center;
+	clear: both;
+	margin: 20px 0;
+}
+
+#colores .critico, #colores .bajo, #colores .medio, #colores .normal, #colores .alto, #colores .exceso {
+	display: inline-block;
+	width: 80px;
+	border: 1px solid black;
+	margin-right: 10px;
+	padding: 0.5em 0;
+}
+
+.critico, .bajo, .medio, .normal, .alto, .exceso {
+	text-align: center;
+	font-weight: bold;
+}
+
+.critico  {
+	background: red;
+	color: white;
+}
+
+.bajo {
+	background: orange;
+	color: white;
+}
+
+.medio {
+	background: yellow;
+	color: black;
+}
+
+.normal {
+	background: greenyellow;
+	color: black;
+}
+
+.alto {
+	background: green;
+	color: white;
+}
+
+.exceso {
+	background: black;
+	color: white;
+}
+
+.categoria {
+	font-weight: bold;
+	font-size: 1.2em;
+}
